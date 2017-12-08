@@ -39,13 +39,13 @@ uint32_t part_two(std::vector<std::vector<uint32_t>> const& numbers)
 
 int main()
 {
-    AOC::print_header("02");
+    aoc::print_header("02");
 
-    auto lines = AOC::read_lines("input.txt");
+    auto lines = aoc::read_lines("input.txt");
 
     std::vector<std::vector<uint32_t>> numbers;
     for(std::string const& str : lines) {
-        numbers.push_back(AOC::convert_strings<uint32_t>(AOC::split_string(str)));
+        numbers.push_back(aoc::convert_strings<uint32_t>(aoc::split_string(str)));
     }
 
     std::cout << "Solution for part one: " << part_one(numbers) << std::endl;

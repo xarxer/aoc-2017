@@ -33,9 +33,9 @@ uint32_t part_two(std::vector<uint32_t> const& numbers)
 
 int main()
 {
-    AOC::print_header("01");
+    aoc::print_header("01");
 
-    auto str = AOC::read_line("input.txt");
+    auto str = aoc::read_line("input.txt");
     std::vector<uint32_t> numbers;
 
     // Convert each char to an int

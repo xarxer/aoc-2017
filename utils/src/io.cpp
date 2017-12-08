@@ -3,7 +3,7 @@
 #include <fstream>
 #include <iostream>
 
-namespace AOC {
+namespace aoc {
 
 std::string read_line(std::string filename, uint32_t line)
 {

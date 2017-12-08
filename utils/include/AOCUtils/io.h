@@ -9,7 +9,10 @@
 
 #include "AOCUtils/global.h"
 
-namespace AOC {
+namespace aoc {
+
+template <typename T>
+using vector2d = std::vector<std::vector<T>>;
 
 AOCUTILS_API
 std::string read_line(std::string filename, uint32_t line = 1);

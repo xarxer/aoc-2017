@@ -44,9 +44,9 @@ uint32_t part_two(std::vector<int32_t> numbers)
 
 int main()
 {
-    AOC::print_header("05");
+    aoc::print_header("05");
 
-    auto numbers = AOC::convert_strings<int32_t>(AOC::read_lines("input.txt"));
+    auto numbers = aoc::convert_strings<int32_t>(aoc::read_lines("input.txt"));
 
     std::cout << "Solution for part one: " << part_one(numbers) << std::endl;
     std::cout << "Solution for part two: " << part_two(numbers) << std::endl;

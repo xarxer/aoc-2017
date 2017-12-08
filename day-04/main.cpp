@@ -60,7 +60,7 @@ uint32_t part_two(std::vector<std::vector<std::string>> const& phrases)
 
 int main()
 {
-    AOC::print_header("02");
+    AOC::print_header("04");
     std::vector<std::vector<std::string>> phrases;
 
     auto lines = AOC::read_lines("input.txt");

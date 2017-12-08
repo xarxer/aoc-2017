@@ -34,13 +34,7 @@ uint32_t part_two(std::vector<int32_t> numbers)
         std::advance(it, value);
 
         value = *it;
-
-        if(value >= 3) {
-            (*it) = value - 1;
-        }
-        else {
-            (*it) = value + 1;
-        }
+        (*it) = value >= 3 ? value - 1 : value + 1;
 
         steps++;
     }

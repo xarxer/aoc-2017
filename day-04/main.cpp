@@ -20,15 +20,13 @@ uint32_t part_one(std::vector<std::vector<std::string>> const& phrases)
 
         bool is_valid = true;
 
-        for(auto it = sub_vector.cbegin(); it != sub_vector.cend(); it++) {
+        for(auto it = sub_vector.cbegin(); it != sub_vector.cend() && is_valid; it++) {
             for(auto comp = std::next(it); comp != sub_vector.cend(); comp++) {
                 if((*it).compare(*comp) == 0) {
                     is_valid = false;
                     break;
                 }
             }
-
-            if(is_valid == false) break;
         }
 
         valid_phrases += is_valid ? 1 : 0;
@@ -45,15 +43,13 @@ uint32_t part_two(std::vector<std::vector<std::string>> const& phrases)
 
         bool is_valid = true;
 
-        for(auto it = sub_vector.cbegin(); it != sub_vector.cend(); it++) {
+        for(auto it = sub_vector.cbegin(); it != sub_vector.cend() && is_valid; it++) {
             for(auto comp = std::next(it); comp != sub_vector.cend(); comp++) {
                 if(is_anagram(*it, *comp)) {
                     is_valid = false;
                     break;
                 }
             }
-
-            if(is_valid == false) break;
         }
 
         valid_phrases += is_valid ? 1 : 0;
